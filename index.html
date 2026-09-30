@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OUTFIT STORE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <a class="home" href="index.html" aria-label="Home"><i class="fa-solid fa-house"></i></a>
+  <form class="search" id="searchForm"><i class="fa-solid fa-magnifying-glass"></i><input id="q" placeholder="search" aria-label="Search products"></form>
+  <button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  <ul class="links" id="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#features">About</a></li>
+    <li><a href="shop.html">Sales</a></li>
+    <li><a href="#contact">Help</a></li>
+    <li><a href="shop.html?cart=1">Order</a></li>
+    <li><a href="#why">Blog</a></li>
+    <li><a href="#contact">Contact US</a></li>
+    <li><a href="#stats">Team</a></li>
+  </ul>
+  <a class="cart-btn" href="shop.html?cart=1" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span id="count">0</span></a>
+</nav>
+
+<header class="hero">
+  <h1>Make your amazing outfit now!</h1>
+  <p>You can make your amazing outfit now. You can discover any style you want. In our store we have the best material and the best quality, less prices. Shopping now!</p>
+  <div><a class="btn" href="shop.html">Shopping now</a> <a class="btn gold" href="#features">Get started</a></div>
+</header>
+
+<section class="sec" id="features">
+  <h2 class="title">Welcome To Our Store</h2>
+  <div class="cards">
+    <div class="card"><i class="fa-solid fa-dollar-sign"></i><h3>Amazing Price</h3><p>Clothes with great quality and less price. You can shop now with high discounts.</p><a href="shop.html">Read More</a></div>
+    <div class="card"><i class="fa-solid fa-shirt"></i><h3>High Quality</h3><p>Clothes with great quality and less price. You can shop now with high discounts.</p><a href="shop.html">Read More</a></div>
+    <div class="card"><i class="fa-solid fa-motorcycle"></i><h3>Fast Delivery</h3><p>Clothes with great quality and less price. You can shop now with high discounts.</p><a href="shop.html">Read More</a></div>
+  </div>
+</section>
+
+<section class="sec" id="why">
+  <div class="why">
+    <div>
+      <h2>Why choose us</h2>
+      <p>We love what we do and we hope it lasts forever, God willing.</p>
+      <ul>
+        <li><i class="fa-regular fa-circle-check"></i>Unique, long-lasting styles for everyone.</li>
+        <li><i class="fa-regular fa-circle-check"></i>Expertly crafted with premium materials.</li>
+        <li><i class="fa-regular fa-circle-check"></i>Exceptional quality with affordable prices.</li>
+        <li><i class="fa-regular fa-circle-check"></i>Dedicated to outstanding customer satisfaction.</li>
+      </ul>
+    </div>
+    <div class="slider">
+      <div class="slide" id="slide" role="img" aria-label="Featured outfit"><i class="fa-regular fa-image"></i></div>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" id="stats">
+  <div class="g">
+    <div><i class="fa-solid fa-people-group"></i><b data-n="1500" data-s="K">0</b><br>happy clients</div>
+    <div><i class="fa-solid fa-trophy"></i><b data-n="40">0</b><br>awards won</div>
+    <div><i class="fa-solid fa-shirt"></i><b data-n="285">0</b><br>orders delivered</div>
+    <div><i class="fa-regular fa-file"></i><b data-n="507">0</b><br>projects completed</div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="foot">
+    <div>
+      <h4><i class="fa-solid fa-house"></i> OUTFIT STORE</h4>
+      <p>Quality clothes at fair prices, delivered fast to your door.</p>
+      <div class="soc">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul><li><a href="index.html">Home</a></li><li><a href="#features">About</a></li><li><a href="shop.html">Shop</a></li><li><a href="shop.html?cart=1">My cart</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul><li><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</li><li><i class="fa-solid fa-phone"></i> 01000000000</li><li><i class="fa-solid fa-envelope"></i> info@outfitstore.com</li></ul>
+    </div>
+    <div>
+      <h4>Get offers first</h4>
+      <p>Join our list for new arrivals and discounts.</p>
+      <form class="news" id="news"><input type="email" placeholder="Your email" required aria-label="Email"><button>Join</button></form>
+      <p class="err" id="newsMsg" style="color:#9fe0a8"></p>
+    </div>
+  </div>
+  <div class="copy">&copy; <span id="yr">2026</span> <b>AY CODE</b>. All rights reserved.</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

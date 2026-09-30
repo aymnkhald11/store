@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop | OUTFIT STORE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <a class="home" href="index.html" aria-label="Home"><i class="fa-solid fa-house"></i></a>
+  <form class="search" id="searchForm"><i class="fa-solid fa-magnifying-glass"></i><input id="q" placeholder="search" aria-label="Search products"></form>
+  <button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  <ul class="links" id="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#features">About</a></li>
+    <li><a href="shop.html">Sales</a></li>
+    <li><a href="#contact">Help</a></li>
+    <li><a href="#" id="orderLink">Order</a></li>
+    <li><a href="index.html#why">Blog</a></li>
+    <li><a href="#contact">Contact US</a></li>
+    <li><a href="index.html#stats">Team</a></li>
+  </ul>
+  <button class="cart-btn" id="cartBtn" aria-label="Open cart"><i class="fa-solid fa-bag-shopping"></i><span id="count">0</span></button>
+</nav>
+
+<section class="shop-head">
+  <h1>Our Collection</h1>
+  <div class="filters" id="filters">
+    <button class="on" data-c="all">All</button><button data-c="men">Men</button><button data-c="women">Women</button><button data-c="kids">Kids</button>
+  </div>
+</section>
+<main class="grid" id="grid"></main>
+
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart">
+  <div class="dh"><span><i class="fa-solid fa-bag-shopping"></i> Your cart</span><button id="closeCart" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button></div>
+  <div class="items" id="items"></div>
+  <div class="sum" id="sum"></div>
+</aside>
+
+<div class="modal" id="modal">
+  <div class="box" id="box"></div>
+</div>
+
+<footer id="contact">
+  <div class="foot">
+    <div>
+      <h4><i class="fa-solid fa-house"></i> OUTFIT STORE</h4>
+      <p>Quality clothes at fair prices, delivered fast to your door.</p>
+      <div class="soc">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul><li><a href="index.html">Home</a></li><li><a href="index.html#features">About</a></li><li><a href="shop.html">Shop</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul><li><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</li><li><i class="fa-solid fa-phone"></i> 01000000000</li><li><i class="fa-solid fa-envelope"></i> info@outfitstore.com</li></ul>
+    </div>
+    <div>
+      <h4>Get offers first</h4>
+      <p>Join our list for new arrivals and discounts.</p>
+      <form class="news" id="news"><input type="email" placeholder="Your email" required aria-label="Email"><button>Join</button></form>
+      <p id="newsMsg" style="color:#9fe0a8;font-size:14px"></p>
+    </div>
+  </div>
+  <div class="copy">&copy; <span id="yr">2026</span> <b>AY CODE</b>. All rights reserved.</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
